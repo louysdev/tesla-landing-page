@@ -1,0 +1,44 @@
+---
+import LandingHeader from "../components/LandingHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import Model3Section from "../components/Model3Section.astro";
+import Section from "../components/Section.astro";
+import ModelYSection from "../components/ModelYSection.astro";
+import ModelXSection from "../components/ModelXSection.astro";
+import EnergySection from "../components/EnergySection.astro";
+import Accessories from "../components/Accessories.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Testa Landing">
+  <LandingHeader />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll"
+  >
+    <!-- Primera seccion -->
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+
+    <div class="snap-center">
+      <Model3Section />
+    </div>
+
+    <div class="snap-center">
+      <ModelYSection />
+    </div>
+
+    <div class="snap-center">
+      <ModelXSection />
+    </div>
+
+    <div class="snap-center">
+      <EnergySection />
+    </div>
+    
+    <div class="snap-center">
+      <Accessories />
+    </div>    
+  </main>
+</Layout>

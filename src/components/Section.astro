@@ -1,0 +1,30 @@
+---
+import Footer from "./Footer.astro";
+const { color, title, subTitle, mostrarFooter } = Astro.props;
+const textColor = `text-${color}`;
+---
+
+<section
+  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+  data-header-color={color}
+>
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class=`${textColor} pt-24 text-[35px] font-medium`>
+        {title}
+      </h2>
+      <p class=`${textColor} text-sm mt-2`>
+        {subTitle}
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <slot name="footer" />
+      {mostrarFooter && <Footer />}
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <slot name="background" />
+  </div>
+</section>

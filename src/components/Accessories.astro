@@ -1,0 +1,20 @@
+---
+import Footer from "./Footer.astro";
+import Section from "./Section.astro";
+---
+
+<Section title="Accesorios" color="black" mostrarFooter="true">
+  <img
+    slot="background"
+    class="w-screen h-screen object-cover object-center"
+    src="accesorios.avif"
+    alt="Imagen"
+  />
+
+  <a
+    slot="footer"
+    href="#"
+    class="text-black text-sm rounded font-medium px-11 py-3 bg-white backdrop-blur-sm hover:bg-black hover:text-white inline-flex justify-center items-center mx-auto"
+    >Comprar ahora</a
+  >
+</Section>
