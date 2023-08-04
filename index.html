@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<meta name="generator" content="Astro v2.9.7">
+		<title>Testa Landing</title>
+	<link rel="stylesheet" href="/tesla-landing-page/_astro/index.9036ea4b.css" /><script type="module">const l=document.querySelector("#landing-header"),i={rool:null,rootMargin:"0px",treshold:.9},c=new IntersectionObserver(t=>{t.forEach(o=>{const{isIntersecting:r}=o;if(r){const s=o.target.getAttribute("data-header-color");l.style.color=s}},i)}),d=document.querySelectorAll(".landing-section");d.forEach(t=>c.observe(t));const a=document.querySelectorAll("#landing-header li"),e=document.querySelector("#menu-backdrop");a.forEach(t=>{t.addEventListener("mouseenter",()=>{const{left:o,top:r,width:s,height:n}=t.getBoundingClientRect();e.style.setProperty("--left",`${o}px`),e.style.setProperty("--top",`${r}px`),e.style.setProperty("--width",`${s}px`),e.style.setProperty("--height",`${n}px`),e.style.opacity="1",e.style.visibility="visible"}),t.addEventListener("mouseleave",()=>{e.style.opacity="0",e.style.visibility="hidden"})});
+</script></head>
+	<body>
+		
+  <header id="landing-header" class="py-3 px-10 flex items-center top-0 w-full justify-between fixed z-40 text-white">
+  <div class="flex flex-grow basis-0">
+    <svg class="h-6 w-28 transition-colors duration-500" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path></svg>
+  </div>
+
+  <nav class="hidden xl:block sm:hidden">
+    <ul class="font-medium flex [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current text-sm [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:py-2">
+      <li><a href="#">Model S</a></li>
+      <li><a href="#">Model 3</a></li>
+      <li><a href="#">Model X</a></li>
+      <li><a href="#">Model Y</a></li>
+      <li><a href="#">Powewall</a></li>
+      <li><a href="#">Carga</a></li>
+    </ul>
+  </nav>
+
+  <nav class="font-medium flex flex-grow justify-end basis-0">
+    <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:py-2">
+      <li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
+      <li><a href="#">Menu</a></li>
+    </ul>
+  </nav>
+
+  <!-- Caja de fondo del li -->
+  <div id="menu-backdrop" class="
+  absolute bg-black/5 backdrop-blur-lg rounded
+  translate-x-[var(--left)]
+  translate-y-[var(--top)]
+  left-0 top-0
+  w-[var(--width)]
+  h-[var(--height)]
+  transition-all duration-500
+  ease-in-out opacity-0 -z-10
+  ">
+  </div>
+</header>
+
+
+<!-- Script para hacer mover el backgroun del nav -->
+  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll">
+    <!-- Primera seccion -->
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="white">
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class="text-white pt-24 text-[35px] font-medium">
+        Vive la experiencia Tesla
+      </h2>
+      <p class="text-white text-sm mt-2">
+        Agende una demostracion de manejo hoy
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <a href="#" class="border-white text-white text-sm border-[3px] rounded font-medium px-10 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300 bg-white/5 backdrop-blur-sm mx-auto">Demostracion de manejo</a>
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <video class="w-screen h-screen object-cover" src="/video/tesla.webm" autoplay muted loop></video>
+  </div>
+</section>
+    </div>
+
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black">
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class="text-black pt-24 text-[35px] font-medium">
+        Model 3
+      </h2>
+      <p class="text-black text-sm mt-2">
+        Agende una demostracion de manejo hoy
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <div class="flex md:gap-x-4 mx-auto flex-col md:flex-row gap-y-4">
+    <a href="#" class="text-black text-sm rounded font-medium px-11 py-3 bg-white backdrop-blur-sm hover:bg-black hover:text-white inline-flex justify-center items-center">Explorar inventario</a>
+    <a href="#" class="bg-gray-700 hover:bg-black hover:text-white text-sm text-white rounded font-medium px-11 py-3 inline-flex backdrop-blur-sm">Demostracion de manejo</a>
+  </div>
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <img class="w-screen h-screen object-cover object-center" src="model3.avif" alt="Imagen">
+  </div>
+</section>
+    </div>
+
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black">
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class="text-black pt-24 text-[35px] font-medium">
+        Model Y
+      </h2>
+      <p class="text-black text-sm mt-2">
+        Agende una demostracion de manejo hoy
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <div class="flex md:gap-x-4 mx-auto flex-col md:flex-row gap-y-4">
+    <a href="#" class="text-black text-sm rounded font-medium px-11 py-3 bg-white backdrop-blur-sm hover:bg-black hover:text-white inline-flex justify-center items-center">Explorar inventario</a>
+    <a href="#" class="bg-gray-700 hover:bg-black hover:text-white text-sm text-white rounded font-medium px-11 py-3 inline-flex backdrop-blur-sm">Demostracion de manejo</a>
+  </div>
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <img class="w-screen h-screen object-cover object-center" src="modely.avif" alt="Imagen">
+  </div>
+</section>
+    </div>
+
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black">
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class="text-black pt-24 text-[35px] font-medium">
+        Model X
+      </h2>
+      <p class="text-black text-sm mt-2">
+        Agende una demostracion de manejo hoy
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <div class="flex md:gap-x-4 mx-auto flex-col md:flex-row gap-y-4">
+    <a href="#" class="text-black text-sm rounded font-medium px-11 py-3 bg-white backdrop-blur-sm hover:bg-black hover:text-white inline-flex justify-center items-center">Explorar inventario</a>
+    <a href="#" class="bg-gray-700 hover:bg-black hover:text-white text-sm text-white rounded font-medium px-11 py-3 inline-flex backdrop-blur-sm">Demostracion de manejo</a>
+  </div>
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <img class="w-screen h-screen object-cover object-center" src="modelx.avif" alt="Imagen">
+  </div>
+</section>
+    </div>
+
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black">
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class="text-black pt-24 text-[35px] font-medium">
+        Energia solar y Powerwall
+      </h2>
+      <p class="text-black text-sm mt-2">
+        Totalmente electrico
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <a href="#" class="bg-gray-700 hover:bg-black hover:text-white text-sm text-white rounded font-medium px-11 py-3 inline-flex backdrop-blur-sm mx-auto">Mas informacion</a>
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <img class="w-screen h-screen object-cover object-center" src="solarpanel.avif" alt="Imagen">
+  </div>
+</section>
+    </div>
+    
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black">
+  <div class="z-30 relative flex flex-col h-screen">
+    <header>
+      <h2 class="text-black pt-24 text-[35px] font-medium">
+        Accesorios
+      </h2>
+      <p class="text-black text-sm mt-2">
+        
+      </p>
+    </header>
+
+    <footer class="flex flex-grow justify-end flex-col pb-20">
+      <a href="#" class="text-black text-sm rounded font-medium px-11 py-3 bg-white backdrop-blur-sm hover:bg-black hover:text-white inline-flex justify-center items-center mx-auto">Comprar ahora</a>
+      <footer id="landing-footer" class=" py-3 px-10 items-center bottom-0 w-full justify-center absolute z-40 text-gray-300 hidden sm:hidden md:flex">
+  <nav>
+    <ul class="flex [&>li>a]:text-current text-xs [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:py-2">
+      <li><a href="#">Tesla © 2023</a></li>
+      <li><a href="#">Privacidad y legal</a></li>
+      <li><a href="#">Llamadas a revision de vehiculos</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Noticias</a></li>
+      <li><a href="#">Ubicaciones</a></li>
+    </ul>
+  </nav>
+</footer>
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 z-10">
+    <img class="w-screen h-screen object-cover object-center" src="accesorios.avif" alt="Imagen">
+  </div>
+</section>
+    </div>    
+  </main>
+
+	</body></html>
